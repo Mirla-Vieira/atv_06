@@ -16,7 +16,6 @@ class ContaBancaria {
   }
 
   depositar(valor) {
-    // this referencia a "funcao" depositar
     this.saldo += valor;
     console.log(`Depósito de R$${valor} realizado\n`);
     console.log(`Saldo atual: R$${this.saldo}`);
@@ -24,7 +23,6 @@ class ContaBancaria {
   }
 
   sacar(valor) {
-    // negar a única possibilidade
     if (valor > this.saldo) {
       console.log(`Saldo insuficiente`);
       return;
